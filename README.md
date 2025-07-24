@@ -1,3 +1,5 @@
 # Member CLV Segmentation Dashboard
 
 ![XYZ_Member_Dashboard](https://github.com/user-attachments/assets/7ec885fa-a014-4682-a7f6-13a1fe0d4ce9)
+
+Dashboard pelanggan ini dirancang sebagai sarana visualisasi dari hasil analisis Customer Lifetime Value (CLV) dan segmentasi pelanggan yang dilakukan menggunakan pendekatan BG/NBD dan Gamma-Gamma model, serta metode K-Means Clustering berbasis LRFM (Length, Recency, Frequency, Monetary) dan CLV. Tujuan utama pengembangan dashboard ini adalah untuk membantu Tim Marketing dan Tim Data Analyst Ritel XYZ dalam memahami karakteristik pelanggan secara lebih mendalam—baik dari sisi perilaku historis maupun potensi nilai ekonomi di masa depan. Informasi yang disajikan mencakup ringkasan karakteristik tiap segmen pelanggan, nilai LRFM, estimasi CLV, serta kontribusi masing-masing segmen terhadap bisnis secara keseluruhan. Dengan adanya dashboard ini, tim terkait dapat merancang strategi retensi yang lebih terarah dan mengembangkan kampanye pemasaran yang lebih efektif, berdasarkan segmentasi dan potensi nilai pelanggan yang telah diidentifikasi.

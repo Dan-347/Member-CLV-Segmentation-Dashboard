@@ -1,3 +1,5 @@
 # Member CLV Segmentation Dashboard
 
-<img width="936" height="620" alt="image" src="D:\Semester 8\Skripsi\XYZ_Member_Dashboard (4)_page-0001.jpg" />
+<img width="936" height="620" alt="image" src="https://github.com/user-attachments/assets/468ec248-efa2-42a2-b58b-99dadc83b419" />
+
+![Tampilan dashboard](C:\Users\User\Pictures\XYZ_Member_Dashboard.jpg)

@@ -36,20 +36,19 @@ This dashboard is highly relevant for:
 ## Analysis Steps
 There are six stages in this project, with an explanation of each step as follows:
 1. **Data Collection** <br>
-
+This study uses XYZ retail data mart, particularly transaction and customer data. Transaction data contains records of customer purchases from January 1, 2023, to June 30, 2024. Customer data is used in the dashboard visualization stage to display customer information, while transaction data is used in the probability and clustering analysis stage to understand customer purchasing behavior patterns.
 2. **Data Cleaning** <br>
-
+Before conducting the analysis stage, transaction data needs to be cleaned to ensure the quality of the data used in the analysis. At this stage, irrelevant transaction data, such as canceled transactions, will be deleted, data formats such as dates and numerical values will be checked and adjusted, and missing values will be handled.
 3. **Application of the BG/NBD Model** <br>
-
+The cleaned data will be used to predict future customer behavior. The BG/NBD Model focuses on the variables of frequency, recency, and T to determine repeat customer transaction behavior. The process of implementing this model includes dividing the data into training and test data, training the model, evaluating or testing the model, applying it to all data, and predicting the number of transactions and lifetime probability for each customer.
 4. **Application of the Gamma-Gamma Model** <br>
-
+Next, applying the gamma-gamma model to predict the CLV value of each customer. The gamma-gamma model focuses on monetary and frequency variables to determine the estimated average amount of money spent by customers in transactions and is used to calculate the predicted CLV value. This model also has several processes that must be followed, such as training the model, evaluating the model, and predicting the CLV value
 5. **Application of K-Means Clustering** <br>
-
+The next step is to group customers based on the prediction results. The data will be divided into several groups or clusters based on the similarity between data in one group. The K-Means algorithm can be used in CLV to group customers based on behavior patterns and profit value. The clustering process involves several steps, such as LRFM extraction, data normalization, finding the optimal number of clusters using the Elbow Method and Silhouette Score, and performing clustering using the best number of clusters. The clustering results will then be analyzed in more depth regarding the characteristics of each segment.
 6. **Dashboard Design** <br>
+The results of the probability analysis and segmentation that have been tested will be visualized in the form of a dashboard. The dashboard design is necessary to facilitate the reading and understanding of the data analysis results. With the dashboard, data that was originally in the form of text and numbers will be converted into graphs so that stakeholders can easily see patterns or trends and make the right decisions based on the data.
 
 ## Insights
-
-
 
 
 ## Conclusion

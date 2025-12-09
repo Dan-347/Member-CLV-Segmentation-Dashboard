@@ -1,4 +1,7 @@
 # Member CLV Segmentation Dashboard
+
+![XYZ_Member_Dashboard](https://github.com/user-attachments/assets/7ec885fa-a014-4682-a7f6-13a1fe0d4ce9)
+
 This dashboard was developed as the final result of Customer Lifetime Value (CLV) analysis and customer segmentation using a combination of probabilistic models (BG/NBD & Gamma-Gamma) and unsupervised learning (K-Means based on LRFM + CLV). This dashboard aims to help the Marketing and Data teams at Retail XYZ understand customer characteristics from two main perspectives, namely historical behavior (LRFM) and future economic value potential (CLV value).
 
 Through this dashboard, users can visually view customer segmentation, understand the differences between each segment, and identify customer groups that have strategic value for the business.
@@ -46,7 +49,7 @@ There are six stages in this project, with an explanation of each step as follow
 
 ## Insights
 
-![XYZ_Member_Dashboard](https://github.com/user-attachments/assets/7ec885fa-a014-4682-a7f6-13a1fe0d4ce9)
+
 
 
 ## Conclusion

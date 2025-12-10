@@ -49,12 +49,13 @@ The next step is to group customers based on the prediction results. The data wi
 The results of the probability analysis and segmentation that have been tested will be visualized in the form of a dashboard. The dashboard design is necessary to facilitate the reading and understanding of the data analysis results. With the dashboard, data that was originally in the form of text and numbers will be converted into graphs so that stakeholders can easily see patterns or trends and make the right decisions based on the data.
 
 ## Insights
-1. **BG/NBD Model and Gamma-gamma Model** <br>
+1. **BG/NBD Model and Gamma-gamma Model**
+
 Based on the results of BG/NBD model training on training data, the parameters indicate that most customers have a low purchase frequency, while only a small portion transact intensively and are highly active. This condition results in a fairly wide distribution of purchase levels. In addition, parameter estimates also indicate that the probability of customers becoming inactive is relatively high, in line with the general pattern of retail customers who make a limited number of transactions. The model evaluation was conducted visually and quantitatively; both approaches showed low error rates and were still within reasonable limits, thus reinforcing that the model has sufficient precision in predicting overall purchasing behavior. The BG/NBD model was then retrained using all transaction data to obtain more stable and representative estimation parameters. This model was then used to calculate estimates of future customer transactions and the probability of customers remaining active.
 
 After modeling customer purchase frequency using BG/NBD, the next step is to predict the average transaction value of customers using the Gamma-Gamma Model. In accordance with the basic assumptions of this model, only customers who have made more than one transaction can be analyzed. Based on the training results, the Gamma-Gamma parameters indicate that there is considerable variation in average spending between customers. This indicates that some customers consistently have higher transaction values than others. Parameter estimates also show that the overall average spending pattern per transaction is in line with the distribution of spending among customers, although there is still significant variation between them. In other words, despite striking differences between customers, the spending behavior of each individual tends to be stable over time. The evaluation of the model in predicting the average transaction value shows that the relative percentage error is low, while the absolute error is still acceptable considering that customer transaction values vary and can reach high nominal values. Overall, these results show that the Gamma-Gamma Model is capable of producing fairly accurate and reliable average spending estimates as a component of CLV calculations.
 
-2. **K-Means Clustering** <br>
+3. **K-Means Clustering** <br>
 As discussed with the marketing team and data analyst team, the clustering process focuses on active customers or customers who have made transactions in the past year. To determine the most optimal number of clusters in the K-Means clustering analysis, an evaluation was conducted using the elbow method and silhouette score with a range of k = 1 to k = 14. In this analysis, the median is used as a measure of data centralization to explain the characteristics of each cluster. This is because monetary values and CLV have outliers that make the mean unrepresentative. The median provides a more accurate picture of the median value and is more robust against outliers. Based on the results of these two evaluations and considerations of the trade-off between cluster separation quality and ease of interpretation, k = 6 was chosen as the best option. This value was also approved by the data analyst team because it produced logical and meaningful customer segmentation. Thus, six customer clusters were formed with the following characteristics:
 1. Cluster 0: Rising Star <br>
 Customers in this cluster show a high transaction frequency, with low recency, indicating that they have made a purchase recently. Although their average basket size is not as large as that of customers in the Top-Tier Loyalist cluster, their CLV value is relatively high and shows promising growth potential. Customers in this cluster have great potential to develop into loyal customers with significant long-term contributions to the business.
@@ -69,15 +70,16 @@ Customers in this cluster have fairly consistent shopping patterns with regular 
 6. Cluster 5: High-Value Sleepers <br>
 This cluster consists of customers who have a high basket size, but shop very rarely or have only shopped once and have not shopped for a long time. Although their CLV is still relatively high, they are at high risk of churn. They are valuable customers who are starting to disappear, so it is necessary to reactivate these potential customers. 
 
-7. **Dashboard** <br>
+3. **Dashboard** <br>
 The XYZ retail dashboard design contains a summary of the characteristics of each customer segment and presents information about the LRFM and CLV values generated by customers. The selected visualization aims to show the contribution of each segment to the business, from the number of customers and transaction values to the potential future value of customers. This dashboard is equipped with various filtering features that can help users customize and view customer data according to their analysis needs.
-1. Data Filter <br>
+- Data Filter <br>
 The dashboard is equipped with various filter features that help users customize the data display according to their analysis needs. With these filters, users can narrow down the scope of data displayed based on the time period used, customer segment name, and gender in the form of a dropdown menu, age in the form of a slider, and the last shopping date in the form of a date range control.
-2. KPI Summary <br>
+- KPI Summary <br>
 This scoreboard visualization provides an initial overview to understand the overall customer situation, such as the number of customers, total sales, total transactions, median recency, frequency, and monetary, as well as the total CLV for the next 3 months. This summary helps users quickly understand business performance without the need to analyze more complex graphs.
-3. Member Segment Characteristics Summary <br>
+- Member Segment Characteristics Summary <br>
 This table contains a summary of metrics that quantitatively describe the characteristics of each customer segment, such as the number of customers in each segment, their percentage contribution to the customer population, the median LRFM and CLV values, and the distance between transactions. This information is intended to compare performance between segments and help the marketing team determine the appropriate marketing approach for each customer segment.
-4. Recency, Frequency, and Monetary of Each Segment <br>
-
+- Recency, Frequency, and Monetary of Each Segment <br>
+This visualization illustrates the characteristics and relationships between the three key metrics of recency, frequency, and monetary value for each customer segment. Users can better understand the distribution of RFM values visually for each customer segment, as well as identify the behavior and contribution of each customer group, such as which customer segments are active, potentially churning, or have high transaction values.
+- 
 
 ## Conclusion
